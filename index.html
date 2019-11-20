@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Доход-Расход</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <h1>  Доход-Расход</h1>
+    <div class="inputs-block">
+
+      <div class="inputs-block-column">
+        <h6>Доход в месяц</h6>
+        <div class="inputs-wrapper">
+          <input type="number" placeholder="Зарплата" id="income-salary">
+          <input type="number" placeholder="Фриланс" id="income-freelance">
+          <input type="number" placeholder="Доп. доход" id="income-extra-1">
+          <input type="number" placeholder="Доп. доход" id="income-extra-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="inputs-block-column">
+        <h6>Обязательные расходы</h6>
+        <div class="inputs-wrapper">
+          <input type="number" placeholder="ЖКХ" id="costs-flat">
+          <input type="number" placeholder="Интернет" id="costs-services">
+          <input type="number" placeholder="Транспорт" id="costs-transport">
+          <input type="number" placeholder="Кредиты" id="costs-credit">
+        </div>
+      </div>
+    </div>
+
+    <div class="inputs-block-column">
+      <div class="total-numb">
+        <h6>Доступно в месяц</h6>
+        <input type="number" class="total" id="total-month" value="0" readonly>
+      </div>
+
+      <div class="total-numb">
+          <h6>Доступно в день</h6>
+          <input type="number" class="total" id="total-day" value="0" readonly>
+        </div>
+
+        <div class="total-numb">
+            <h6>Доступно за год</h6>
+            <input type="number" class="total" id="total-year" value="0" readonly>
+          </div>
+
+    </div>
+  </div>
+
+  <div class="range-block">
+    <h6>Копилка (Сколько откладываем?)</h6>
+    <div class="range-wrapper">
+      <div id="slider-range"></div>
+      <div class="slider-range-result">
+        <input type="text" id="precent" readonly>
+      </div> 
+    </div>
+  </div>
+
+  <div class="result-block">
+
+    <div class="total-numb">
+      <h6>Копим</h6>
+      <input type="number" id="accumulation" value="0" readonly>
+    </div>
+
+    <div class="total-numb">
+        <h6>Тратим</h6>
+        <input type="number" id="accumulation" value="0" readonly>
+      </div>
+  </div>
+  
+  
+</body>
+</html>
