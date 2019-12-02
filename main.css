@@ -62,3 +62,33 @@ input {
 .inputs-wrapper {
   margin-top: 30px;
 }
+
+.inputs-wrapper input {
+  margin-bottom: 20px;
+}
+
+.inputs-wrapper input:last-child {
+  margin-bottom: 0px;
+}
+
+.total-numb {
+  margin-bottom: 40px;
+}
+
+.total-numb:last-child {
+  margin-bottom: 0px;
+}
+
+.total-numb h6{
+  margin-bottom: 10px;
+}
+
+.total-numb input{
+font-weight: 600;
+font-size: 40px;
+line-height: 55px;
+letter-spacing: 0.03em;
+color: #000000;
+background-color: transparent;
+box-shadow:none;
+}
